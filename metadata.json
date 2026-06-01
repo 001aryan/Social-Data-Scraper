@@ -1,0 +1,6 @@
+{
+  "name": "Social Data Scraper",
+  "description": "A premium, modern SaaS platform to extract and analyze insights from social media platforms in seconds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,19 @@
+services:
+  # Social Data Scraper API service
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+    volumes:
+      - sqlite-data:/app/prisma
+    restart: always
+
+volumes:
+  sqlite-data:

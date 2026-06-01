@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Sleek Theme global mappings */
+  --color-gray-950: #030303;
+  --color-slate-950: #030303;
+  --color-zinc-950: #030303;
+  --color-neutral-950: #030303;
+
+  --color-gray-900: #09090b;
+  --color-slate-900: #09090b;
+  --color-zinc-900: #09090b;
+
+  --color-gray-850: rgba(255, 255, 255, 0.05);
+  --color-slate-850: rgba(255, 255, 255, 0.05);
+
+  --color-gray-800: rgba(255, 255, 255, 0.05);
+  --color-slate-800: rgba(255, 255, 255, 0.05);
+
+  --color-indigo-600: #6366f1;
+}
+
+body {
+  background-color: #030303 !important;
+  color: #e1e1e1 !important;
+}
+
+/* Direct element style adjustments to enforce the pure dark-sleek aesthetic */
+.bg-gray-950\/40, .bg-slate-950\/40, .bg-slate-900\/40, .bg-[#080d15]\/50, .bg-slate-950\/60 {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.border-gray-850, .border-gray-800, .border-gray-900, .border-slate-800, .border-slate-850 {
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Glass panel elements matching the template design */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Buttons with sleek subtle shadows and color transitions */
+.btn-sleek-gradient {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-sleek-gradient:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 25px rgba(99, 102, 241, 0.35);
+}
+
+/* Custom seamless modern glass scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.5);
+}
+
